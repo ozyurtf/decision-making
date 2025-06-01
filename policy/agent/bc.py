@@ -83,7 +83,6 @@ class BCAgent:
 
 		self.actor = Actor(repr_dim, action_shape, hidden_dim).to(device)
 
-		# TODO: Define optimizers
 		if self.use_encoder:
 			self.encoder_opt = torch.optim.Adam(self.encoder.parameters())
 		self.actor_opt = torch.optim.Adam(self.actor.parameters())
@@ -114,7 +113,6 @@ class BCAgent:
 		goal = torch.as_tensor(goal, device=self.device).float().unsqueeze(0) # 1 x 2
 		stddev = utils.schedule(self.stddev_schedule, step)
   
-		# TODO: Compute action using the actor (and the encoder if pixels are used)
 		if self.use_encoder:
 			obs=self.encoder(obs)
 		dist_action = self.actor(obs, stddev)		
@@ -130,18 +128,15 @@ class BCAgent:
 		
 		# augment
 		if self.use_encoder:
-			# TODO: Augment the observations and encode them (for pixels)
 			obs = self.aug(obs)
 			obs = self.encoder(obs)
 
 		stddev = utils.schedule(self.stddev_schedule, step)
 		
-		# TODO: Compute the actor loss using log_prob on output of the actor
 		dist_action = self.actor(obs, stddev)
 		log_prob = dist_action.log_prob(action).sum(-1, keepdim=True)
 		actor_loss = -log_prob.mean()
 		 
-		# TODO: Update the actor (and encoder for pixels)	
 		if self.use_encoder:
 			self.encoder_opt.zero_grad(set_to_none=True)
 		self.actor_opt.zero_grad(set_to_none=True)  

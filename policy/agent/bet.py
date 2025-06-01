@@ -38,8 +38,6 @@ class Actor(nn.Module):
 
 		self._output_dim = action_shape[0]
 
-		# TODO: Define the policy network
-		# Hint: There must be a common trunk followed by two heads - one for binning and one for offsets
 		self.nbins = nbins
 		self.policy = nn.Sequential(nn.Linear(repr_dim, hidden_dim),
 									nn.ReLU(),
@@ -53,7 +51,6 @@ class Actor(nn.Module):
 		self.apply(utils.weight_init)
 
 	def forward(self, obs, std, cluster_centers=None):
-		# TODO: Implement the forward pass, return bin_logits, and offset
 		obs_features = self.policy(obs)
 		bin_logits = self.binning_head(obs_features)
 		offsets = self.offset_head(obs_features)
@@ -81,22 +78,18 @@ class Agent:
 		# discretizer
 		self.discretizer = KMeansDiscretizer(num_bins = self.nbins, kmeans_iters = self.kmeans_iters)
 
-		# TODO: Define the encoder (for pixels)
 		if self.use_encoder:
 			self.encoder = Encoder(obs_shape).to(device)
 			repr_dim = self.encoder.repr_dim
 		else:
-			# TODO: Define the representation dimension for non-pixel observations
 			repr_dim = obs_shape[0]
 
-		# TODO: Define the actor
 		self.actor = Actor(repr_dim, action_shape, hidden_dim, nbins).to(device)
 
 		# Loss
 		self.criterion = FocalLoss(gamma=2.0)
 		self.mse_loss = nn.MSELoss()
 
-		# TODO: Define optimizers
 		if self.use_encoder:
 			self.encoder_opt = torch.optim.Adam(self.encoder.parameters(), lr = 0.01)
 		self.actor_opt = torch.optim.Adam(self.actor.parameters(), lr = 0.01)
@@ -128,8 +121,6 @@ class Agent:
 		self.cluster_centers = self.discretizer.bin_centers.float().to(self.device)
 		
 	def find_closest_cluster(self, actions) -> torch.Tensor:
-		# TODO: Return the index of closest cluster center for each action in actions
-		# Return shape: (N, )
 		distances = torch.cdist(actions, self.cluster_centers)  # (N, num_bins)
 		return torch.argmin(distances, dim=1)  # (N, )
  
@@ -137,13 +128,11 @@ class Agent:
 		obs = torch.as_tensor(obs, device=self.device).float().unsqueeze(0)
 		goal = torch.as_tensor(goal, device=self.device).float().unsqueeze(0)
 		
-		# TODO: Obtain bin_logits and offset from the actor
 		stddev = utils.schedule(self.stddev_schedule, step)
 		if self.use_encoder: 
 			obs=self.encoder(obs)
 		bin_logits, offsets = self.actor(obs, stddev, self.cluster_centers)
 
-		# TODO: Compute base action (Hint: Use the bin_logits)
 		bin_probabilities = F.softmax(bin_logits, dim = -1)
 		sampled_bin = torch.argmax(bin_probabilities, dim = -1) 
 		base_action = self.cluster_centers[sampled_bin]
@@ -161,15 +150,12 @@ class Agent:
 		
 		# augment
 		if self.use_encoder:
-			# TODO: Augment the observations and encode them (for pixels)
 			obs = self.aug(obs)
 			obs = self.encoder(obs)
 
-		# TODO: Compute bin_logits and offset from the actor
 		stddev = utils.schedule(self.stddev_schedule, step)
 		bin_logits, offsets = self.actor(obs, stddev, self.cluster_centers)
 
-		# TODO: Compute discrete loss on bins and offset loss	
 		action_closest_cluster_centers = self.find_closest_cluster(action) # action_closest_cluster_centers = ⌊a⌋, action = a, cluster centers = A
 		discrete_loss = self.criterion(bin_logits, action_closest_cluster_centers)  	
   	
@@ -183,7 +169,6 @@ class Agent:
 		# actor loss
 		actor_loss = discrete_loss + self.offset_loss_weight * offset_loss
 		
-		# TODO: Update the actor (and encoder for pixels)
 		if self.use_encoder: 
 			self.encoder_opt.zero_grad()
 		self.actor_opt.zero_grad()
