@@ -4,34 +4,38 @@
 
 ![Behavior Cloning](figures/behavior-cloning.png)
 
-<table>
-    <tr>
-        <th>Changing</th>
-        <th>Fixed</th>
-        <th>Multimodal</th>
-    </tr>
-    <tr>
-        <td align="center"><img src="./gifs/behavior-cloning/changing/changing.gif" alt="Changing" width="245"/></td>
-        <td align="center"><img src="./gifs/behavior-cloning/fixed/fixed.gif" alt="Fixed" width="245"/></td>
-        <td align="center"><img src="./gifs/behavior-cloning/multimodal/multimodal.gif" alt="Multimodal" width="245"/></td>
-    </tr>
-</table>
+<p align="center">
+    <table>
+        <tr>
+            <th>Changing</th>
+            <th>Fixed</th>
+            <th>Multimodal</th>
+        </tr>
+        <tr>
+            <td align="center"><img src="./gifs/behavior-cloning/changing/changing.gif" alt="Changing" width="245"/></td>
+            <td align="center"><img src="./gifs/behavior-cloning/fixed/fixed.gif" alt="Fixed" width="245"/></td>
+            <td align="center"><img src="./gifs/behavior-cloning/multimodal/multimodal.gif" alt="Multimodal" width="245"/></td>
+        </tr>
+    </table>
+</p>
 
 ## Goal Conditioned Behavior Cloning
 
 ![Goal-Conditioned Behavior Cloning](figures/goal-conditioned-behavior-cloning.png)
 
 
-<table>
-    <tr>
-        <th>Changing</th>
-        <th>Fixed</th>
-    </tr>
-    <tr>
-        <td align="center"><img src="./gifs/goal-conditioned-behavior-cloning/changing/changing.gif" alt="Changing" width="375"/></td>
-        <td align="center"><img src="./gifs/goal-conditioned-behavior-cloning/fixed/fixed.gif" alt="Fixed" width="375"/></td>
-    </tr>
-</table>
+<p align="center">
+    <table>
+            <tr>
+                    <th>Changing</th>
+                    <th>Fixed</th>
+            </tr>
+            <tr>
+                    <td align="center"><img src="./gifs/goal-conditioned-behavior-cloning/changing/changing.gif" alt="Changing" width="245"/></td>
+                    <td align="center"><img src="./gifs/goal-conditioned-behavior-cloning/fixed/fixed.gif" alt="Fixed" width="245"/></td>
+            </tr>
+    </table>
+</p>
 
 ## Behavior Transformer 
 
