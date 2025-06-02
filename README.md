@@ -16,7 +16,7 @@
     </div>
     <div style="text-align: center;">
       <h4>Multimodal</h4>
-      <img src="./gifs/behavior-cloning/multimodal/multimodal.gif" alt="Multimodal" width="245"style="border: 3px solid #666666;"/>
+      <img src="./gifs/behavior-cloning/multimodal/multimodal.gif" alt="Multimodal" width="245" style="border: 3px solid #666666;"/>
     </div>
   </div>
 </div>
