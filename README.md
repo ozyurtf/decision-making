@@ -11,9 +11,9 @@
         <th>Multimodal</th>
     </tr>
     <tr>
-        <td align="center"><img src="./gifs/behavior-cloning/changing/changing.gif" alt="Changing" width="300"/></td>
-        <td align="center"><img src="./gifs/behavior-cloning/fixed/fixed.gif" alt="Fixed" width="300"/></td>
-        <td align="center"><img src="./gifs/behavior-cloning/multimodal/multimodal.gif" alt="Multimodal" width="300"/></td>
+        <td align="center"><img src="./gifs/behavior-cloning/changing/changing.gif" alt="Changing" width="25"/></td>
+        <td align="center"><img src="./gifs/behavior-cloning/fixed/fixed.gif" alt="Fixed" width="250"/></td>
+        <td align="center"><img src="./gifs/behavior-cloning/multimodal/multimodal.gif" alt="Multimodal" width="250"/></td>
     </tr>
 </table>
 
