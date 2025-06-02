@@ -4,20 +4,26 @@
 
 ![Behavior Cloning](figures/behavior-cloning.png)
 
-<p align="center">
-    <table>
-        <tr>
-            <th>Changing</th>
-            <th>Fixed</th>
-            <th>Multimodal</th>
-        </tr>
-        <tr>
-            <td align="center"><img src="./gifs/behavior-cloning/changing/changing.gif" alt="Changing" width="245"/></td>
-            <td align="center"><img src="./gifs/behavior-cloning/fixed/fixed.gif" alt="Fixed" width="245"/></td>
-            <td align="center"><img src="./gifs/behavior-cloning/multimodal/multimodal.gif" alt="Multimodal" width="245"/></td>
-        </tr>
-    </table>
-</p>
+<div align="center">
+  <table>
+    <tr>
+      <th>Changing</th>
+      <th>Fixed</th>
+      <th>Multimodal</th>
+    </tr>
+    <tr>
+      <td align="center">
+        <img src="./gifs/behavior-cloning/changing/changing.gif" alt="Changing" width="245"/>
+      </td>
+      <td align="center">
+        <img src="./gifs/behavior-cloning/fixed/fixed.gif" alt="Fixed" width="245"/>
+      </td>
+      <td align="center">
+        <img src="./gifs/behavior-cloning/multimodal/multimodal.gif" alt="Multimodal" width="245"/>
+      </td>
+    </tr>
+  </table>
+</div>
 
 ## Goal Conditioned Behavior Cloning
 
