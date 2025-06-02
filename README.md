@@ -2,6 +2,8 @@
 
 ## Behavior Cloning 
 
+![Behavior Cloning](figures/behavior-cloning.png)
+
 ## Goal Conditioned Behavior Cloning
 
 ## Behavior Transformer 
