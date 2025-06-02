@@ -11,9 +11,9 @@
         <th>Multimodal</th>
     </tr>
     <tr>
-        <td align="center"><img src="./gifs/behavior-cloning/changing/changing.gif" alt="Changing" width="250"/></td>
-        <td align="center"><img src="./gifs/behavior-cloning/fixed/fixed.gif" alt="Fixed" width="250"/></td>
-        <td align="center"><img src="./gifs/behavior-cloning/multimodal/multimodal.gif" alt="Multimodal" width="250"/></td>
+        <td align="center"><img src="./gifs/behavior-cloning/changing/changing.gif" alt="Changing" width="245"/></td>
+        <td align="center"><img src="./gifs/behavior-cloning/fixed/fixed.gif" alt="Fixed" width="245"/></td>
+        <td align="center"><img src="./gifs/behavior-cloning/multimodal/multimodal.gif" alt="Multimodal" width="245"/></td>
     </tr>
 </table>
 
@@ -28,8 +28,8 @@
         <th>Fixed</th>
     </tr>
     <tr>
-        <td align="center"><img src="./gifs/goal-conditioned-behavior-cloning/changing.gif" alt="Changing" width="300"/></td>
-        <td align="center"><img src="./gifs/goal-conditioned-behavior-cloning/fixed/fixed.gif" alt="Fixed" width="300"/></td>
+        <td align="center"><img src="./gifs/goal-conditioned-behavior-cloning/changing/changing.gif" alt="Changing" width="368"/></td>
+        <td align="center"><img src="./gifs/goal-conditioned-behavior-cloning/fixed/fixed.gif" alt="Fixed" width="368"/></td>
     </tr>
 </table>
 
