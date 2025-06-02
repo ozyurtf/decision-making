@@ -6,6 +6,8 @@
 
 ## Goal Conditioned Behavior Cloning
 
+![Goal-Conditioned Behavior Cloning](figures/goal-conditioned-behavior-cloning.png)
+
 ## Behavior Transformer 
 
 ## Dagger
