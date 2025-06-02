@@ -28,8 +28,8 @@
         <th>Fixed</th>
     </tr>
     <tr>
-        <td align="center"><img src="./gifs/goal-conditioned-behavior-cloning/changing/changing.gif" alt="Changing" width="400"/></td>
-        <td align="center"><img src="./gifs/goal-conditioned-behavior-cloning/fixed/fixed.gif" alt="Fixed" width="400"/></td>
+        <td align="center"><img src="./gifs/goal-conditioned-behavior-cloning/changing/changing.gif" alt="Changing" width="375"/></td>
+        <td align="center"><img src="./gifs/goal-conditioned-behavior-cloning/fixed/fixed.gif" alt="Fixed" width="375"/></td>
     </tr>
 </table>
 
