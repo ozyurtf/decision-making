@@ -11,7 +11,7 @@
       <img src="./gifs/behavior-cloning/changing/changing.gif" alt="Changing Target" width="245" style="border: 3px solid #666666;"/>
     </div>
     <div style="text-align: center;">
-      <h4>Fixed</h4>
+      <h4>Fixed Target</h4>
       <img src="./gifs/behavior-cloning/fixed/fixed.gif" alt="Fixed Target" width="245" style="border: 3px solid #666666;"/>
     </div>
     <div style="text-align: center;">
