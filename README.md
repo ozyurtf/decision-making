@@ -11,7 +11,7 @@
         <th>Multimodal</th>
     </tr>
     <tr>
-        <td align="center"><img src="./gifs/behavior-cloning/changing/changing.gif" alt="Changing" width="25"/></td>
+        <td align="center"><img src="./gifs/behavior-cloning/changing/changing.gif" alt="Changing" width="250"/></td>
         <td align="center"><img src="./gifs/behavior-cloning/fixed/fixed.gif" alt="Fixed" width="250"/></td>
         <td align="center"><img src="./gifs/behavior-cloning/multimodal/multimodal.gif" alt="Multimodal" width="250"/></td>
     </tr>
@@ -28,8 +28,8 @@
         <th>Fixed</th>
     </tr>
     <tr>
-        <td align="center"><img src="./gifs/goal-conditioned-behavior-cloning/changing.gif" alt="Changing" width="200"/></td>
-        <td align="center"><img src="./gifs/goal-conditioned-behavior-cloning/fixed/fixed.gif" alt="Fixed" width="200"/></td>
+        <td align="center"><img src="./gifs/goal-conditioned-behavior-cloning/changing.gif" alt="Changing" width="300"/></td>
+        <td align="center"><img src="./gifs/goal-conditioned-behavior-cloning/fixed/fixed.gif" alt="Fixed" width="300"/></td>
     </tr>
 </table>
 
