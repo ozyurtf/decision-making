@@ -7,12 +7,12 @@
 <div align="center">
   <div style="display: flex; justify-content: center; gap: 20px; align-items: flex-start;">
     <div style="text-align: center;">
-      <h4>Changing</h4>
+      <h4>Changing Target</h4>
       <img src="./gifs/behavior-cloning/changing/changing.gif" alt="Changing Target" width="245" style="border: 4px solid #666666;"/>
     </div>
     <div style="text-align: center;">
-      <h4>Fixed</h4>
-      <img src="./gifs/behavior-cloning/fixed/fixed.gif" alt="Fixed Target" width="245" style="border: 4px solid #666666;"/>
+      <h4>Fixed Target</h4>
+      <img src="./gifs/behavior-cloning/fixed/fixed.gif" alt="Fixed Target" width="245" style="border: 3px solidrgb(167, 167, 167);"/>
     </div>
     <div style="text-align: center;">
       <h4>Multimodal</h4>
@@ -28,11 +28,11 @@
 <div align="center">
   <div style="display: flex; justify-content: center; gap: 20px; align-items: flex-start;">
     <div style="text-align: center;">
-      <h4>Changing</h4>
-      <img src="./gifs/goal-conditioned-behavior-cloning/changing/changing.gif" alt="Changing Target" width="245" style="border: 4px solid #666666;"/>
+      <h4>Changing Target</h4>
+      <img src="./gifs/goal-conditioned-behavior-cloning/changing/changing.gif" alt="Changing Target" width="245" style="border: 3px solidrgb(167, 167, 167);"/>
     </div>
     <div style="text-align: center;">
-      <h4>Fixed</h4>
+      <h4>Fixed Target</h4>
       <img src="./gifs/goal-conditioned-behavior-cloning/fixed/fixed.gif" alt="Fixed Target" width="245" style="border: 4px solid #666666;"/>
     </div>
   </div>
