@@ -5,18 +5,18 @@
 ![Behavior Cloning](figures/behavior-cloning.png)
 
 <div align="center">
-  <div style="display: flex; justify-content: center; gap: 20px; align-items: flex-start; min-width: 800px;">
-    <div style="text-align: center; flex: 0 0 auto;">
+  <div style="display: flex; justify-content: center; gap: 15px; align-items: flex-start;">
+    <div style="text-align: center;">
       <h4>Changing</h4>
-      <img src="./gifs/behavior-cloning/changing/changing.gif" alt="Changing" width="245"/>
+      <img src="./gifs/behavior-cloning/changing/changing.gif" alt="Changing" width="200"/>
     </div>
-    <div style="text-align: center; flex: 0 0 auto;">
+    <div style="text-align: center;">
       <h4>Fixed</h4>
-      <img src="./gifs/behavior-cloning/fixed/fixed.gif" alt="Fixed" width="245"/>
+      <img src="./gifs/behavior-cloning/fixed/fixed.gif" alt="Fixed" width="200"/>
     </div>
-    <div style="text-align: center; flex: 0 0 auto;">
+    <div style="text-align: center;">
       <h4>Multimodal</h4>
-      <img src="./gifs/behavior-cloning/multimodal/multimodal.gif" alt="Multimodal" width="245"/>
+      <img src="./gifs/behavior-cloning/multimodal/multimodal.gif" alt="Multimodal" width="200"/>
     </div>
   </div>
 </div>
