@@ -8,17 +8,29 @@
 
 ### Changing Goal 
 
+**Episode 1**
+
 ![Changing Goal, Episode 1](figures/changing_goal/episode_0.png)
 
-![Changing Goal, Episode 1](figures/changing_goal/episode_1.png)
+**Episode 2**
 
-![Changing Goal, Episode 2](figures/changing_goal/episode_2.png)
+![Changing Goal, Episode 2](figures/changing_goal/episode_1.png)
+
+**Episode 3**
+
+![Changing Goal, Episode 3](figures/changing_goal/episode_2.png)
 
 ### Fixed Goal 
 
+**Episode 1**
+
 ![Fixed Goal, Episode 1](figures/fixed_goal/episode_0.png)
 
+**Episode 2**
+
 ![Fixed Goal, Episode 1](figures/fixed_goal/episode_1.png)
+
+**Episode 3**
 
 ![Fixed Goal, Episode 2](figures/fixed_goal/episode_2.png)
 
