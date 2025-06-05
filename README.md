@@ -2,7 +2,9 @@
 
 ## Environment 
 
-![Environment](figures/environment.png)
+<div align="center">
+  <img src="figures/environment.png" alt="Environment" width="400"/>
+</div>
 
 ## Expert Dataset 
 
