@@ -27,7 +27,7 @@ class ExpertReplayBuffer(IterableDataset):
                            action=actions[i],
                            goal=goals[i])
             self._episodes.append(episode)
-        
+            
         self._max_episode_len = max([len(episode) for episode in self._episodes])
         self._train_episodes_till = int(len(self._episodes) * self._train_test_ratio)
 

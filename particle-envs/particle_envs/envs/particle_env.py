@@ -14,7 +14,7 @@ class ParticleEnv(gym.Env):
         # - initialize the agent to a random location 
         # - create a random goal 
         # - determine the reward amount after taking actions 
-        # - put obstacled to the environment
+        # - put obstacles to the environment
         self.height = height
         self.width = width
         self.step_size = step_size
@@ -273,8 +273,6 @@ if __name__ == '__main__':
                       step_size = 10, 
                       reward_type = 'dense', 
                       reward_scale = None, 
-                      start = None, 
-                      goal = None, 
                       block = None)
     
     # Run 10 episodes and in each episode:
