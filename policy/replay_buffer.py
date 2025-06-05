@@ -76,8 +76,8 @@ class ExpertReplayBuffer(IterableDataset):
     def sample_test(self):
         """
         Repeating the same process as in the _sample() function 
-        -— except now we sample from the list of episodes 
-        that will be used to test the model.
+        (except now we sample from the list of episodes 
+        that will be used to test the model)
         """
         episode = random.choice(self._episodes[self._train_episodes_till:])
         observation = episode['observation']

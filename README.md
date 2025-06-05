@@ -36,10 +36,6 @@
 
 ![Fixed Goal, Episode 2](figures/fixed_goal/episode_2.png)
 
-### Multimodal
-
-## Replay Buffer
-
 ## Behavior Cloning 
 
 ![Behavior Cloning](figures/behavior-cloning.png)
@@ -80,7 +76,7 @@
 
 ## Behavior Transformer 
 
-## Dagger
+## DAgger
 
 ## Q-Learning
 
