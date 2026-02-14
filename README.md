@@ -73,20 +73,3 @@
     </div>
   </div>
 </div>
-
-## Behavior Transformer 
-
-## DAgger
-
-## Q-Learning
-
-## Double Q-Learning 
-
-## Dueling Double Q-Learning 
-
-## Reinforce 
-
-## PPO 
-
-
-
