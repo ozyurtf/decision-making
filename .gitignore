@@ -1,5 +1,5 @@
 .DS_Store
-policy/exp_local/
+exp_local
 data
 understanding.ipynb
 instruction.
