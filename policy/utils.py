@@ -40,20 +40,20 @@ class eval_mode:
         for model, state in zip(self.models, self.prev_states):
             model.train(state)
         return False
-
-    def set_seed_everywhere(seed):
-        """
-        Setting the same seed for PyTorch, NumPy, CUDA (if it is available), 
-        and Python's random modules to ensure that all randomized operations 
-        produce the exact same (sequence of) numbers every time the code runs. 
-        This creates deterministic behavior and ensures 
-        reproducibility and consistent results during evaluation of the model.
-        """
-        torch.manual_seed(seed)
-        if torch.cuda.is_available():
-            torch.cuda.manual_seed_all(seed)
-        np.random.seed(seed)
-        random.seed(seed)
+    
+def set_seed_everywhere(seed):
+    """
+    Setting the same seed for PyTorch, NumPy, CUDA (if it is available), 
+    and Python's random modules to ensure that all randomized operations 
+    produce the exact same (sequence of) numbers every time the code runs. 
+    This creates deterministic behavior and ensures 
+    reproducibility and consistent results during evaluation of the model.
+    """
+    torch.manual_seed(seed)
+    if torch.cuda.is_available():
+        torch.cuda.manual_seed_all(seed)
+    np.random.seed(seed)
+    random.seed(seed)
 
 def soft_update_params(net, target_net, tau):
     """

@@ -36,19 +36,19 @@
 
 ![Fixed Goal, Episode 2](figures/fixed_goal/episode_2.png)
 
-## Behavior Cloning 
+## Behavior Cloning
 
 ![Behavior Cloning](figures/behavior-cloning.png)
 
 <div align="center">
   <div style="display: flex; justify-content: center; gap: 20px; align-items: flex-start;">
     <div style="text-align: center;">
-      <h4>Changing Goal</h4>
-      <img src="./gifs/behavior-cloning/changing/changing.gif" alt="Changing Goal" width="245" style="border: 3px solid #666666;"/>
-    </div>
-    <div style="text-align: center;">
       <h4>Fixed Goal</h4>
       <img src="./gifs/behavior-cloning/fixed/fixed.gif" alt="Fixed Goal" width="245" style="border: 3px solid #666666;"/>
+    </div>
+    <div style="text-align: center;">
+      <h4>Changing Goal</h4>
+      <img src="./gifs/behavior-cloning/changing/changing.gif" alt="Changing Goal" width="245" style="border: 3px solid #666666;"/>
     </div>
     <div style="text-align: center;">
       <h4>Multimodal</h4>
@@ -64,12 +64,35 @@
 <div align="center">
   <div style="display: flex; justify-content: center; gap: 20px; align-items: flex-start;">
     <div style="text-align: center;">
+      <h4>Fixed Goal</h4>
+      <img src="./gifs/goal-conditioned-behavior-cloning/fixed/fixed.gif" alt="Fixed Goal" width="245" style="border: 3px solid #666666;"/>
+    </div>
+    <div style="text-align: center;">
       <h4>Changing Goal</h4>
       <img src="./gifs/goal-conditioned-behavior-cloning/changing/changing.gif" alt="Changing Goal" width="245" style="border: 3px solid #666666;"/>
     </div>
     <div style="text-align: center;">
+      <h4>Multimodal</h4>
+      <img src="./gifs/goal-conditioned-behavior-cloning/multimodal/multimodal.gif" alt="Multimodal" width="245" style="border: 3px solid #666666;"/>
+    </div>
+  </div>
+</div>
+
+## Behavior Transformer
+
+<div align="center">
+  <div style="display: flex; justify-content: center; gap: 20px; align-items: flex-start;">
+    <div style="text-align: center;">
       <h4>Fixed Goal</h4>
-      <img src="./gifs/goal-conditioned-behavior-cloning/fixed/fixed.gif" alt="Fixed Goal" width="245" style="border: 3px solid #666666;"/>
+      <img src="./gifs/behavior-transformer/fixed/fixed.gif" alt="Fixed Goal" width="245" style="border: 3px solid #666666;"/>
+    </div>
+    <div style="text-align: center;">
+      <h4>Changing Goal</h4>
+      <img src="./gifs/behavior-transformer/changing/changing.gif" alt="Changing Goal" width="245" style="border: 3px solid #666666;"/>
+    </div>
+    <div style="text-align: center;">
+      <h4>Multimodal</h4>
+      <img src="./gifs/behavior-transformer/multimodal/multimodal.gif" alt="Multimodal" width="245" style="border: 3px solid #666666;"/>
     </div>
   </div>
 </div>

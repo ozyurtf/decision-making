@@ -5,7 +5,7 @@ defaults:
   - override hydra/launcher: submitit_local
 
 # Root Dir
-root_dir: /Users/ozyurtf/Documents/ms-cs/spring-2025/deep-decision-making/assignments/assignment-1
+root_dir: /Users/ozyurtf/Documents/projects/decision-making
 
 # misc
 seed: 42
