@@ -56,21 +56,23 @@
 
 <div align="center">
   <div style="display: flex; justify-content: center; gap: 20px; align-items: flex-start;">
-    <div style="text-align: center;">
+    <div style="text-align: center; max-width: 245px;">
       <h4>Fixed Goal</h4>
       <img src="./gifs/behavior-cloning/fixed/fixed.gif" alt="Fixed Goal" width="245" style="border: 3px solid #666666;"/>
+      <p style="font-size: 14px; text-align: left;">In the fixed goal dataset, the same observation always maps to the same action and the MLP can learn this mapping easily because there is no conflicting signal. That's why it performs well on the fixed goal dataset.</p>
     </div>
-    <div style="text-align: center;">
+    <div style="text-align: center; max-width: 245px;">
       <h4>Changing Goal</h4>
       <img src="./gifs/behavior-cloning/changing/changing.gif" alt="Changing Goal" width="245" style="border: 3px solid #666666;"/>
+      <p style="font-size: 14px; text-align: left;">In the changing goal dataset, the same observation can map to different actions in different episodes. That's why the MLP fails to learn this mapping and performs poorly on the changing goal dataset.</p>
     </div>
-    <div style="text-align: center;">
+    <div style="text-align: center; max-width: 245px;">
       <h4>Multimodal</h4>
       <img src="./gifs/behavior-cloning/multimodal/multimodal.gif" alt="Multimodal" width="245" style="border: 3px solid #666666;"/>
+      <p style="font-size: 14px; text-align: left;">In the multimodal dataset, the last goal is fixed but the agent should reach other goals first before reaching the last goal. Therefore, like in the changing goal dataset, the same observation can map to different actions (because of different intermediate goals) in different episodes. That's why the MLP fails to learn this mapping and performs poorly on the multimodal dataset.</p>
     </div>
   </div>
 </div>
-
 
 ## Goal Conditioned Behavior Cloning
 
@@ -78,21 +80,23 @@
 
 <div align="center">
   <div style="display: flex; justify-content: center; gap: 20px; align-items: flex-start;">
-    <div style="text-align: center;">
+    <div style="text-align: center; max-width: 245px;">
       <h4>Fixed Goal</h4>
       <img src="./gifs/goal-conditioned-behavior-cloning/fixed/fixed.gif" alt="Fixed Goal" width="245" style="border: 3px solid #666666;"/>
+      <p style="font-size: 14px; text-align: left;">In the fixed goal dataset, the model still performs well for the same reasons as in behavior cloning.</p>
     </div>
-    <div style="text-align: center;">
+    <div style="text-align: center; max-width: 245px;">
       <h4>Changing Goal</h4>
       <img src="./gifs/goal-conditioned-behavior-cloning/changing/changing.gif" alt="Changing Goal" width="245" style="border: 3px solid #666666;"/>
+      <p style="font-size: 14px; text-align: left;">In the changing goal dataset, the model performs well because when the observation is the same and the action is different in different episodes, the goal is different as well and this makes the input to the model unique. Therefore, the MLP can learn the mapping from observation and goal to action in a goal-conditioned manner.</p>
     </div>
-    <div style="text-align: center;">
+    <div style="text-align: center; max-width: 245px;">
       <h4>Multimodal</h4>
       <img src="./gifs/goal-conditioned-behavior-cloning/multimodal/multimodal.gif" alt="Multimodal" width="245" style="border: 3px solid #666666;"/>
+      <p style="font-size: 14px; text-align: left;">In the multimodal setting, even though intermediate goals can be different in different episodes, since we are feeding the next goal as input to the model at each step, the model performs well on this dataset as well.</p>
     </div>
   </div>
 </div>
-
 
 ## Behavior Transformer
 
@@ -114,3 +118,4 @@
     </div>
   </div>
 </div>
+
