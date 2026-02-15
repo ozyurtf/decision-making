@@ -121,3 +121,7 @@
     </div>
   </div>
 </div>
+
+## References
+
+- Nur Muhammad Mahi Shafiullah, Zichen Jeff Cui, Ariuntuya Altanzaya, Lerrel Pinto. "Behavior Transformers: Cloning *k* modes with one stone." *Thirty-Sixth Conference on Neural Information Processing Systems*, 2022. [[Paper]](https://openreview.net/forum?id=agTr-vRQsa)
