@@ -107,6 +107,7 @@
     <div style="text-align: center; max-width: 245px;">
       <h4>Fixed Goal</h4>
       <img src="./gifs/behavior-transformer/fixed/fixed.gif" alt="Fixed Goal" width="245" style="border: 3px solid #666666;"/>
+      <p style="font-size: 14px; text-align: left;">In the fixed goal dataset, since the goal is the same across all episodes, for any given observation [x, y], there's only one correct action direction which is toward that fixed goal. This means that the expert actions for the same observation always belong to the same cluster. The ground truth label is always cluster i and it never conflicts with cluster j. The binning head learns this consistent mapping easily, argmax picks the right cluster every time, the offset refines it to the precise action, and the agent learns to reach the goal easily.</p>
     </div>
     <div style="text-align: center; max-width: 245px;">
       <h4>Changing Goal</h4>
@@ -116,9 +117,7 @@
     <div style="text-align: center; max-width: 245px;">
       <h4>Multimodal</h4>
       <img src="./gifs/behavior-transformer/multimodal/multimodal.gif" alt="Multimodal" width="245" style="border: 3px solid #666666;"/>
-      <p style="font-size: 14px; text-align: left;">The same things can be said in the multimodal setting as well. In the multimodal setting, there are intermediate goals that change in different episodes and one final goal that is the same in each episode. Similar to the changing goal setting, the agent picks a cluster with argmax and that cluster can sometimes put the agent in the wrong direction and cause it to miss the intermediate goals. In the gif above, we see that the agent always follows the same path regardless of the positions of the intermediate goal, which is correct for some episodes and wrong for others. The problem here is at inference. The model needs to pick the right cluster for the current episode but it doesn't have that information (the intermediate goal) to make that choice. And since the final goal is always fixed, the agent is still able to reach the final goal even when it misses the right intermediate goals because every cluster that was learned from the expert data ultimately leads there.</p>
+      <p style="font-size: 14px; text-align: left;">The same things can be said in the multimodal setting as well. In the multimodal setting, there are intermediate goals that change in different episodes and one final goal that is the same in each episode. Similar to the changing goal setting, the agent picks a cluster with argmax and that cluster can sometimes put the agent in the wrong direction and cause it to miss the intermediate goals. In the gif above, we see that the agent always follows the same path regardless of the positions of the intermediate goal, which is correct for some episodes and wrong for others. The problem here is at inference. The model needs to pick the right cluster for the current episode but it doesn't have that information (the intermediate goal) to make that choice. And since the final goal is always fixed, the agent is still able to reach the final goal even when it misses the right intermediate goals because every cluster that was learned from the expert data ultimately leads the agent to the final goal.</p>
     </div>
   </div>
 </div>
-
-
