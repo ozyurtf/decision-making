@@ -80,6 +80,8 @@
 
 ## Behavior Transformer
 
+![Behavior Transformer](figures/bet.png)
+
 <div align="center">
   <div style="display: flex; justify-content: center; gap: 20px; align-items: flex-start;">
     <div style="text-align: center;">
