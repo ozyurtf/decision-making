@@ -104,18 +104,21 @@
 
 <div align="center">
   <div style="display: flex; justify-content: center; gap: 20px; align-items: flex-start;">
-    <div style="text-align: center;">
+    <div style="text-align: center; max-width: 245px;">
       <h4>Fixed Goal</h4>
       <img src="./gifs/behavior-transformer/fixed/fixed.gif" alt="Fixed Goal" width="245" style="border: 3px solid #666666;"/>
     </div>
-    <div style="text-align: center;">
+    <div style="text-align: center; max-width: 245px;">
       <h4>Changing Goal</h4>
       <img src="./gifs/behavior-transformer/changing/changing.gif" alt="Changing Goal" width="245" style="border: 3px solid #666666;"/>
+      <p style="font-size: 14px; text-align: left;">In the changing goal setting, we see that the model performs very poorly because of similar reasons as in behavior cloning. Let's say the agent is at [x, y] position in episode a and episode b of the changing goal setting. Since the goals will be different, the expert actions will be different as well and therefore they will be associated with different clusters. Let's call them cluster i and cluster j. In other words, the ground truth label for the same observation might be either cluster i or cluster j. Let's say that cluster i represents "go toward top left", cluster j represents "go toward right". When the agent is at [x, y], and argmax picks cluster j that puts the agent in the wrong direction, the agent will never reach the target. And this is what we see in the gif above.</p>
     </div>
-    <div style="text-align: center;">
+    <div style="text-align: center; max-width: 245px;">
       <h4>Multimodal</h4>
       <img src="./gifs/behavior-transformer/multimodal/multimodal.gif" alt="Multimodal" width="245" style="border: 3px solid #666666;"/>
+      <p style="font-size: 14px; text-align: left;">The same things can be said in the multimodal setting as well. In the multimodal setting, there are intermediate goals that change in different episodes and one final goal that is the same in each episode. Similar to the changing goal setting, the agent picks a cluster with argmax and that cluster can sometimes put the agent in the wrong direction and cause it to miss the intermediate goals. In the gif above, we see that the agent always follows the same path regardless of the positions of the intermediate goal, which is correct for some episodes and wrong for others. The problem here is at inference. The model needs to pick the right cluster for the current episode but it doesn't have that information (the intermediate goal) to make that choice. And since the final goal is always fixed, the agent is still able to reach the final goal even when it misses the right intermediate goals because every cluster that was learned from the expert data ultimately leads there.</p>
     </div>
   </div>
 </div>
+
 
