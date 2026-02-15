@@ -52,7 +52,7 @@
 
 ## Behavior Cloning
 
-![Behavior Cloning](figures/behavior-cloning.png)
+![Behavior Cloning](figures/bc.png)
 
 <div align="center">
   <div style="display: flex; justify-content: center; gap: 20px; align-items: flex-start;">
@@ -76,7 +76,7 @@
 
 ## Goal Conditioned Behavior Cloning
 
-![Goal-Conditioned Behavior Cloning](figures/goal-conditioned-behavior-cloning.png)
+![Goal-Conditioned Behavior Cloning](figures/gcbc.png)
 
 <div align="center">
   <div style="display: flex; justify-content: center; gap: 20px; align-items: flex-start;">
