@@ -1,5 +1,3 @@
-**Note**: I took the core codebase for environment simulation and related infrastructure in this repository from my assignments in the Deep Decision Making and Reinforcement Learning (DDRL) course at New York University. I implemented the Behavior Cloning, Goal-Conditioned Behavior Cloning, Behavior Transformer,DAgger, Double Q-Learning, Dueling DQN, and PPO algorithms and added their visualizations. Their performance are shown in the GIFs below. 
-
 ## Environment 
 
 <div align="center">
