@@ -74,7 +74,7 @@
 
 ## Goal Conditioned Behavior Cloning
 
-![Goal-Conditioned Behavior Cloning](figures/gcbc.png)
+![Goal-Conditioned Behavior Cloning](https://raw.githubusercontent.com/ozyurtf/decision-making/main/figures/gcbc.png)
 
 <div align="center">
   <div style="display: flex; justify-content: center; gap: 20px; align-items: flex-start;">
@@ -98,7 +98,7 @@
 
 ## Behavior Transformer
 
-![Behavior Transformer](figures/bet.png)
+![Behavior Transformer](https://raw.githubusercontent.com/ozyurtf/decision-making/main/figures/bet.png)
 
 <div align="center">
   <div style="display: flex; justify-content: center; gap: 20px; align-items: flex-start;">
